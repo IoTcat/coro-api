@@ -1,0 +1,27 @@
+{
+  "name": "coro-api",
+  "version": "1.0.0",
+  "description": "新型冠状病毒 API",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iotcat/coro-api.git"
+  },
+  "keywords": [
+    "coronavirus",
+    "api"
+  ],
+  "author": "iotcat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iotcat/coro-api/issues"
+  },
+  "homepage": "https://github.com/iotcat/coro-api#readme",
+  "dependencies": {
+    "coro-py": "^1.0.0",
+    "express": "^4.17.1"
+  }
+}
