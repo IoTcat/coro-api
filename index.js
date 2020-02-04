@@ -9,6 +9,10 @@ var app = require('express')();
 app.listen(17676 /*default port*/, () => console.log('Coro API listening on port 17676!'));
 
 app.get('/', async (req, res) => {
+	/* corss domain */
+	res.header("Access-Control-Allow-Origin", "*");
+
+	/* get info from coro-py */
 	var o = await coro();
 
 	/* req province & city */
@@ -54,7 +58,7 @@ app.get('/', async (req, res) => {
 						if(city.cityName == req.query.city){
 							resolve(city);
 						}else{
-							if(city_index == item.cities.length-1){
+							if(city_index == item.cities.length-1 && index == o.length-1){
 								resolve({});
 							}
 						}

@@ -1,7 +1,27 @@
 # coro-api
-新型冠状病毒 api
+新型冠状病毒 实时数据 api
 
-## 快速开始
+## API示例
+
+### 获取全部
+
+[https://api.yimian.xyz/coro](https://api.yimian.xyz/coro)
+
+### 根据省份
+
+[https://api.yimian.xyz/coro?province=山东](https://api.yimian.xyz/coro?province=山东)  
+
+### 根据城市
+
+[https://api.yimian.xyz/coro?city=泰安](https://api.yimian.xyz/coro?city=泰安)
+
+### 根据省和城(推荐)
+
+[https://api.yimian.xyz/coro?province=山东&city=泰安](https://api.yimian.xyz/coro?province=山东&city=泰安`) 
+
+
+
+## 快速部署
 
 ### 环境要求
  - `nodeJS`支持`express`任意版本
@@ -22,29 +42,28 @@ $ npm install
 $ node index.js
 ```
 
-## 访问
+### 访问
 ```
 http://localhost:17676
 ```
 
-## GET参数
+
+## 进阶
+
+### GET参数
  参数 | 描述 | 示例 
  :--: | :--: | :--:
  province | 省份(国家) | 山东
  city | 城市 | 泰安
 
-```
-http://localhost:17676/?province=山东
-```
-```
-http://localhost:17676/?city=泰安
-```
-
-## 进阶
 
 ### 修改端口
 
 从`index.js`第9行修改默认端口。
+
+### 禁止跨域
+
+注释掉`index.js`第13行。
 
 ### 使用pm2守护进程
 
