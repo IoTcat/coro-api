@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/iotcat/coro-api#readme",
   "dependencies": {
-    "coro-py": "^1.0.0",
+    "coro-py": "1.0.1",
     "express": "^4.17.1"
   }
 }
