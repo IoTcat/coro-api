@@ -15,11 +15,6 @@
 
 [https://api.yimian.xyz/coro?city=泰安](https://api.yimian.xyz/coro?city=泰安)
 
-### 根据省和城(推荐)
-
-[https://api.yimian.xyz/coro?province=山东&city=泰安](https://api.yimian.xyz/coro?province=山东&city=泰安`) 
-
-
 
 ## 快速部署
 
